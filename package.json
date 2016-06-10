@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/cerebral/cerebral-website-tutorial-basic#readme",
   "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "cerebral": "^0.34.2",
     "cerebral-addons": "^0.5.4",
     "cerebral-model-immutable": "^0.1.0",
     "cerebral-module-devtools": "^0.6.4",
+    "express": "^4.13.4",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-dev-middleware": "^1.6.1"
   }
 }
