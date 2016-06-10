@@ -1,0 +1,20 @@
+{
+  "name": "cerebral-website-tutorial",
+  "version": "0.1.0",
+  "description": "Example app for Cerebral website tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerebral/cerebral-website-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerebral/cerebral-website-tutorial/issues"
+  },
+  "homepage": "https://github.com/cerebral/cerebral-website-tutorial#readme",
+  "dependencies": {}
+}
