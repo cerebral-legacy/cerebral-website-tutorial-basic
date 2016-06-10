@@ -1,10 +1,5 @@
 import Controller from 'cerebral';
-import Model from 'cerebral-model-immutable';
-
-const model = Model({
-  items: [],
-  newItemTitle: ''
-});
+import model from './model';
 
 const controller = Controller(model);
 
