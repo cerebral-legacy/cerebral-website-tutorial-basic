@@ -1,5 +1,6 @@
 import Controller from 'cerebral'
 import model from './model'
+import Devtools from 'cerebral-module-devtools'
 
 import newItemTitleChanged from './signals/newItemTitleChanged'
 import newItemSubmitted from './signals/newItemSubmitted'
@@ -12,6 +13,10 @@ controller.addSignals({
     immediate: true
   },
   newItemSubmitted
+})
+
+controller.addModules({
+  devtools: Devtools()
 })
 
 export default controller
