@@ -1,7 +1,7 @@
 import {Component, h} from 'cerebral-view-snabbdom'
 
 export default Component({
-  newTodoTitle: 'newTodoTitle',
+  newItemTitle: 'newItemTitle',
   items: 'items'
 }, props => {
 
