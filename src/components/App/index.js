@@ -2,7 +2,7 @@ import React from 'react'
 import {Decorator as Cerebral} from 'cerebral-view-react'
 
 @Cerebral({
-  newTodoTitle: 'newTodoTitle',
+  newItemTitle: 'newItemTitle',
   items: 'items'
 })
 class App extends React.Component {
@@ -21,7 +21,7 @@ class App extends React.Component {
         <form onSubmit={event => this.onFormSubmit(event)}>
           <input
             type="text"
-            value={this.props.newTodoTitle}
+            value={this.props.newItemTitle}
             onChange={event => this.onInputChange(event)}
           />
         </form>
