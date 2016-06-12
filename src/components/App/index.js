@@ -1,6 +1,6 @@
 import {Component, h} from 'cerebral-view-snabbdom'
 
-export default Component({
+export default Component('App', {
   newItemTitle: 'newItemTitle',
   items: 'items'
 }, props => {
