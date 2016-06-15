@@ -8,11 +8,11 @@ import {Decorator as Cerebral} from 'cerebral-view-react'
 class App extends React.Component {
   onFormSubmit(event) {
     event.preventDefault()
-    this.props.signals.newItemSubmitted()
+    this.props.signals.newItemTitleSubmitted()
   }
-  onInputChange(value) {
+  onInputChange(event) {
     this.props.signals.newItemTitleChanged({
-      title: value
+      title: event.target.value
     })
   }
   render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
         <ul>
           {this.props.items.map((item, index ) => (
             <li key={index}>
-              {item.title}
+              {item}
             </li>
           ))}
         </ul>
@@ -36,3 +36,5 @@ class App extends React.Component {
     )
   }
 }
+
+export default App
