@@ -18,6 +18,7 @@
   "homepage": "https://github.com/cerebral/cerebral-website-tutorial-basic#readme",
   "dependencies": {
     "cerebral": "^0.34.2",
+    "cerebral-addons": "^0.5.4",
     "cerebral-model-immutable": "^0.1.0",
     "cerebral-view-react": "^0.11.18",
     "react": "^15.1.0",
