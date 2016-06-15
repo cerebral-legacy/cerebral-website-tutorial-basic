@@ -3,7 +3,7 @@
 import addItem from '../actions/addItem'
 import set from 'cerebral-addons/set'
 
-default export [
+export default [
   // You just reference the action and the
   // signal will handle its execution
   addItem,
