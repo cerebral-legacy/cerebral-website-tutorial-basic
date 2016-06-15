@@ -1,8 +1,8 @@
 // This action grabs the current "newItemTitle"
-// from the state store and pushes it into the
-// "items" array
+// from the state store and putting it at the top of
+// the "items" array
 function addItem({state}) {
-  state.push('items', state.get('newItemTitle'))
+  state.unshift('items', state.get('newItemTitle'))
 }
 
 export default addItem
