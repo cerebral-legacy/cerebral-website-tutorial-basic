@@ -3,7 +3,7 @@ import model from './model'
 import Devtools from 'cerebral-module-devtools'
 
 import newItemTitleChanged from './signals/newItemTitleChanged'
-import newItemSubmitted from './signals/newItemSubmitted'
+import newItemTitleSubmitted from './signals/newItemTitleSubmitted'
 
 const controller = Controller(model)
 
@@ -12,7 +12,7 @@ controller.addSignals({
     chain: newItemTitleChanged,
     immediate: true
   },
-  newItemSubmitted
+  newItemTitleSubmitted
 })
 
 controller.addModules({
