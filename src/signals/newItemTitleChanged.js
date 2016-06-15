@@ -2,7 +2,7 @@
 // an action based on your arguments
 import copy from 'cerebral-addons/copy'
 
-default export [
+export default [
   // Using "url-scheme" we copy the title value
   // from the input to the newItemTitle path in
   // our state tree
