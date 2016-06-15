@@ -12,8 +12,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: 'body',
-      filename: 'index.html'
+      title: 'Cerebral demo application',
+      template: path.resolve('src', 'index.template.ejs'),
+      inject: 'body'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
