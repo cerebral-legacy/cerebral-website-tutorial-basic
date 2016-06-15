@@ -1,4 +1,12 @@
 # cerebral-website-tutorial
-The tutorial app for the Cerebral website
+The tutorial app for the Cerebral website using React
 
-The master branch of this project does not container anything. Please look at the specific branches for each view layer implementation of the same app.
+## Install
+1. Clone the repo
+2. `$ npm install`
+3. `$ npm start`
+4. Go to *localhost:8080*
+
+## Build for production
+1. `$ npm run build`
+2. Files are located in */dist*

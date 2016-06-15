@@ -7,7 +7,7 @@ export default Component('App', {
 
   function onFormSubmit(event) {
     event.preventDefault()
-    props.signals.newItemSubmitted()
+    props.signals.newItemTitleSubmitted()
   }
 
   function onInputChange(event) {
