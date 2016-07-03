@@ -28,12 +28,10 @@
     "cerebral-model-immutable": "^0.1.0",
     "cerebral-module-devtools": "^0.7.0-rc.2",
     "cerebral-view-react": "^0.12.0-beta.5",
-    "express": "^4.13.4",
     "html-webpack-plugin": "^2.21.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "webpack": "^1.13.1",
-    "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1"
   }
 }
