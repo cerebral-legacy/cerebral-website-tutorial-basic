@@ -1,6 +1,6 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: path.resolve('src', 'main.js'),
@@ -11,9 +11,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Cerebral demo application',
-      template: path.resolve('src', 'index.template.ejs'),
-      inject: 'body'
+      inject: 'body',
+      template: 'src/index.html'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
@@ -35,4 +34,4 @@ module.exports = {
       }
     }]
   }
-};
+}
