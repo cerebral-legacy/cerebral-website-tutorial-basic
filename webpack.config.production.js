@@ -1,6 +1,6 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: path.resolve('src', 'main.js'),
@@ -11,9 +11,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      inject: 'body',
       title: 'Cerebral demo application',
-      template: path.resolve('src', 'index.template.ejs'),
-      inject: 'body'
+      template: path.resolve('src', 'index.template.ejs')
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
@@ -30,9 +30,8 @@ module.exports = {
       include: path.resolve('src'),
       loader: 'babel',
       query: {
-        presets: ['es2015', 'stage-0', 'react'],
-        plugins: ['transform-decorators-legacy']
+        presets: ['es2015', 'stage-0', 'react']
       }
     }]
   }
-};
+}
