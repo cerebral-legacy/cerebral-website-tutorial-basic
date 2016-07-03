@@ -1,9 +1,9 @@
-import {Component, h} from 'cerebral-view-snabbdom'
+import {connect, h} from 'cerebral-view-snabbdom'
 
-export default Component('App', {
+export default connect({
   newItemTitle: 'newItemTitle',
   items: 'items'
-}, props => {
+})(function App(props) {
 
   function onFormSubmit(event) {
     event.preventDefault()
