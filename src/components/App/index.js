@@ -1,40 +1,38 @@
 import React from 'react'
 import {Decorator as Cerebral} from 'cerebral-view-react'
 
-@Cerebral({
+export default Cerebral({
   newItemTitle: 'newItemTitle',
   items: 'items'
-})
-class App extends React.Component {
-  onFormSubmit(event) {
+})(function App(props) {
+
+  function onTitleSubmit(event) {
     event.preventDefault()
-    this.props.signals.newItemTitleSubmitted()
+    props.signals.newItemTitleSubmitted()
   }
-  onInputChange(event) {
-    this.props.signals.newItemTitleChanged({
+
+  function onTitleChange(event) {
+    props.signals.newItemTitleChanged({
       title: event.target.value
     })
   }
-  render() {
-    return (
-      <div>
-        <form onSubmit={event => this.onFormSubmit(event)}>
-          <input
-            type="text"
-            value={this.props.newItemTitle}
-            onChange={event => this.onInputChange(event)}
-          />
-        </form>
-        <ul>
-          {this.props.items.map((item, index ) => (
-            <li key={index}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-}
 
-export default App
+  return (
+    <div>
+      <form onSubmit={onTitleSubmit}>
+        <input
+          type="text"
+          value={props.newItemTitle}
+          onChange={onTitleChange}
+        />
+      </form>
+      <ul>
+        {props.items.map((item, index) => (
+          <li key={index}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+})
