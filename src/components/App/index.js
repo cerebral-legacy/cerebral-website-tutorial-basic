@@ -6,12 +6,12 @@ export default Cerebral({
   items: 'items'
 })(function App(props) {
 
-  function onTitleSubmit(event) {
+  function onFormSubmit(event) {
     event.preventDefault()
     props.signals.newItemTitleSubmitted()
   }
 
-  function onTitleChange(event) {
+  function onInputChange(event) {
     props.signals.newItemTitleChanged({
       title: event.target.value
     })
@@ -19,11 +19,11 @@ export default Cerebral({
 
   return (
     <div>
-      <form onSubmit={onTitleSubmit}>
+      <form onSubmit={onFormSubmit}>
         <input
           type="text"
           value={props.newItemTitle}
-          onChange={onTitleChange}
+          onChange={onInputChange}
         />
       </form>
       <ul>
