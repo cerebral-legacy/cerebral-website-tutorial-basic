@@ -2,17 +2,17 @@ import Controller from 'cerebral'
 import model from './model'
 import Devtools from 'cerebral-module-devtools'
 
-import newItemTitleChanged from './signals/newItemTitleChanged'
-import newItemTitleSubmitted from './signals/newItemTitleSubmitted'
+import updateItemTitle from './chains/updateItemTitle'
+import addNewItem from './chains/addNewItem'
 
 const controller = Controller(model)
 
 controller.addSignals({
   newItemTitleChanged: {
-    chain: newItemTitleChanged,
+    chain: updateItemTitle,
     immediate: true
   },
-  newItemTitleSubmitted
+  newItemTitleSubmitted: addNewItem
 })
 
 controller.addModules({
