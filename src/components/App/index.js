@@ -1,17 +1,16 @@
 import React from 'react'
-import {Decorator as Cerebral} from 'cerebral-view-react'
+import {connect} from 'cerebral-view-react'
 
-export default Cerebral({
+export default connect({
   newItemTitle: 'newItemTitle',
   items: 'items'
-})(function App(props) {
-
-  function onFormSubmit(event) {
+}, function App (props) {
+  function onFormSubmit (event) {
     event.preventDefault()
     props.signals.newItemTitleSubmitted()
   }
 
-  function onInputChange(event) {
+  function onInputChange (event) {
     props.signals.newItemTitleChanged({
       title: event.target.value
     })
@@ -21,7 +20,7 @@ export default Cerebral({
     <div>
       <form onSubmit={onFormSubmit}>
         <input
-          type="text"
+          type='text'
           value={props.newItemTitle}
           onChange={onInputChange}
         />
