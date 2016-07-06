@@ -1,11 +1,10 @@
 import React from 'react'
 import {connect} from 'cerebral-view-react'
 
-export default connect(
-  {
-    newItemTitle: 'newItemTitle',
-    items: 'items'
-  },
+export default connect({
+  newItemTitle: 'newItemTitle',
+  items: 'items'
+},
   function App(props) {
 
     const onFormSubmit = event => {

@@ -1,4 +1,4 @@
-import Controller from 'cerebral'
+import {Controller} from 'cerebral'
 import model from './model'
 import Devtools from 'cerebral-module-devtools'
 
