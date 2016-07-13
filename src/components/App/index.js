@@ -24,7 +24,7 @@ export default connect({
           <input
             type="text"
             value={props.newItemTitle}
-            onChange={onInputChange}
+            onInput={onInputChange}
           />
         </form>
         <ul>
