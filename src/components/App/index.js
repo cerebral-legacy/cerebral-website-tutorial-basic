@@ -3,16 +3,19 @@ import {connect, h} from 'cerebral-view-snabbdom'
 export default connect({
   newItemTitle: 'newItemTitle',
   items: 'items'
+}, {
+  newItemTitleSubmitted: 'newItemTitleSubmitted',
+  newItemTitleChanged: 'newItemTitleChanged'
 },
   function App(props) {
 
     const onFormSubmit = event => {
       event.preventDefault()
-      props.signals.newItemTitleSubmitted()
+      props.newItemTitleSubmitted()
     }
 
     const onInputChange = event => {
-      props.signals.newItemTitleChanged({
+      props.newItemTitleChanged({
         title: event.target.value
       })
     }
