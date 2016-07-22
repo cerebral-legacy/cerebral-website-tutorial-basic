@@ -25,7 +25,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "cerebral": "^0.35.0",
     "cerebral-module-devtools": "^0.7.0",
-    "cerebral-view-inferno": "^1.0.3",
+    "cerebral-view-inferno": "^1.1.0",
     "html-webpack-plugin": "^2.21.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
