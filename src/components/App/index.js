@@ -8,8 +8,7 @@ export default connect({
   newItemTitleSubmitted: 'newItemTitleSubmitted',
   newItemTitleChanged: 'newItemTitleChanged'
 },
-  function App(props) {
-
+  function App (props) {
     const onFormSubmit = event => {
       event.preventDefault()
       props.newItemTitleSubmitted()
@@ -23,9 +22,10 @@ export default connect({
 
     return (
       <div>
+        <p>Type text and hit enter</p>
         <form onSubmit={onFormSubmit}>
           <input
-            type="text"
+            type='text'
             value={props.newItemTitle}
             onInput={onInputChange}
           />
