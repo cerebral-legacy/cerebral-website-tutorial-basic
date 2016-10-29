@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cerebral/cerebral-website-tutorial-basic.git"
+    "url": "git+https://github.com/cerebral-legacy/cerebral-website-tutorial-basic.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cerebral/cerebral-website-tutorial-basic/issues"
+    "url": "https://github.com/cerebral-legacy/cerebral-website-tutorial-basic/issues"
   },
-  "homepage": "https://github.com/cerebral/cerebral-website-tutorial-basic#readme",
+  "homepage": "https://github.com/cerebral-legacy/cerebral-website-tutorial-basic#readme",
   "dependencies": {
     "cerebral": "^0.34.2",
     "cerebral-addons": "^0.5.4",
