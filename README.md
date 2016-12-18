@@ -5,7 +5,7 @@ The tutorial app for the Cerebral website using React
 1. Clone the repo
 2. `$ npm install`
 3. `$ npm start`
-4. Go to *localhost:8080*
+4. Go to *localhost:3000*
 
 ## Build for production
 1. `$ npm run build`
